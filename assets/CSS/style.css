@@ -12,6 +12,7 @@
   --nav-input:#e5e5e5;
   --i:#6c757d;
   --bordi:#cbcbcb;
+  --titoli-tabelle: #f7f7f7;
 }
 
 *{
@@ -155,7 +156,9 @@ main .next-classes{
   align-items: center;
   background-color: var(--code-icon);
   height: 30px;
-  width: 30px;
+  width:30px;
+  min-height: 30px;
+  min-width:30px;
   border-radius: 50%;
 }
 
