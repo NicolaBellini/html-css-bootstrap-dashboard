@@ -11,6 +11,7 @@
   --blue-bar-badges:#165bba;
   --nav-input:#e5e5e5;
   --i:#6c757d;
+  --bordi:#cbcbcb;
 }
 
 *{
@@ -50,6 +51,11 @@ header{
   height: 70px;
 }
 
+header .nav{
+  background-color: white;
+  flex-wrap: nowrap;
+}
+
 .logo{
   max-width: 150px;
   min-width: 70px;
@@ -59,8 +65,8 @@ header{
 }
 
 .logo img:nth-child(2){
-  width: 50px;
-  min-width: 50px;
+  width: 40px;
+  min-width: 40px;
 }
 
 .search{
@@ -90,6 +96,13 @@ aside i{
 main{
   height: calc(100vh - 70px);
   /* margin-top: 70px; */
+}
+
+.workspace{
+  background-color: orange;
+  height: 100%;
+  width: calc(100% - 150px);
+  overflow:auto;
 }
 
 main .next-classes{
@@ -132,7 +145,7 @@ main .next-classes{
   margin: 2px;
   width: 30px;
   height: 30px;
-  border: 1px solid black;
+  border: 1px solid var(--bordi);
 }
 
 
@@ -146,14 +159,33 @@ main .next-classes{
   border-radius: 50%;
 }
 
-
-
-.workspace{
-  background-color: orange;
-  height: 100%;
-  width: calc(100% - 150px);
-  overflow:auto;
+.my-accordion .title{
+  background-color: #f7f7f7;
 }
+
+
+.todo{
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.todo .title{
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-bottom: 1px solid var(--bordi);
+}
+
+.todo .my-check{
+  border: 1px solid var(--bordi);
+  border-bottom: none;
+  border-radius: 5px;
+}
+
+.todo .my-check div{
+  border-bottom: 1px solid var(--bordi);
+}
+
 
 @media (max-width:767px){
 

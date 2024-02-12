@@ -25,24 +25,25 @@
 <body>
 
   <!-- navbar -->
-  <header class="d-flex align-items-center ">
-    
-    <div class="logo d-flex align-items-center  debug"> 
-      <img src="assets/img/logo.svg" class="d-none d-md-block " class="logo-dekstop" alt="">
-      <img src="assets/img/mobile-logo.png" class="d-md-none  " class="mobile-logo" alt="">
-    </div>
+  <header class="d-flex align-items-center " >
+    <div class="nav d-flex align-items-center justify-content-between w-100 debug" >
+      <div class="logo d-flex align-items-center  debug"> 
+        <img src="assets/img/logo.svg" class="d-none d-md-block " class="logo-dekstop" alt="">
+        <img src="assets/img/mobile-logo.png" class="d-md-none  " class="mobile-logo" alt="">
+      </div>
 
-    <div class="search">
-      <form action="" class="debug">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Prova a cercare">
-      </form>
-    </div>
-    <div class="icons d-flex align-items-center justify-content-around  debug">
-      <i class="fa-solid fa-bars"></i>
-      <i class="fa-solid fa-circle-question"></i>
-      <i class="fa-solid fa-ellipsis-vertical"></i>
-      <i class="fa-solid fa-bell"></i>
+      <div class="search">
+        <form action="" class="debug">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Prova a cercare">
+        </form>
+      </div>
+      <div class="icons d-flex align-items-center justify-content-around  debug">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-circle-question"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+        <i class="fa-solid fa-bell"></i>
+      </div>
     </div>
   </header>
   <!-- navbar -->
@@ -123,7 +124,11 @@
               </div>
               
             </div>
-            <div class="my-accordion mb-3 ">
+
+            <div class="my-accordion mb-3 debug">
+              <div class="title">
+                <h2>F.A.Q.</h2>
+              </div>
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
@@ -165,10 +170,45 @@
             </div>
           </div>
           <div class="col-dx col-12 col-md-4 debug">
-            <div class="todo">
+            <div class="todo w-100 mt-3 mb-3  ">
+              <div class="title ">
+                <h2>Todo</h2>
+              </div>
+              <div class="my-check m-2">
+                <div>
+                  <input type="checkbox" id="opzione1"><label for="opzione1">&nbspKickoff nuove classi</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="opzione2"><label for="opzione2">&nbspLezione su Bootstrap 5 in classe #75</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="opzione3"><label for="opzione3">&nbspControllare usarname github studenti</label>
+                </div>
+              </div>
+            </div>
 
+            <div class="graph p-2 debug">
+              <div class="">
+                <img src="assets/img/stats.jpeg" alt="">
+                <h4 class="mt-2 mb-2 ">Utenti attivi</h4>
+                <p>Lista degli utenti attivi in piattaforma nell' ultimo mese</p>
+              </div>
+              <div class="debug">
+                <p>Gennaio: 1200</p>
+              </div>
+              <div class="debug">
+                <p>Febbraio: 800</p>
+              </div>
+              <div class="debug">
+                Marzo: 1500
+              </div>
+              <div>
+                <a href=""></a>
+              </div>
             </div>
           </div>
+
+
         </div>
 
       </div>
