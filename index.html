@@ -25,30 +25,54 @@
 <body>
 
   <!-- navbar -->
-  <header>
-    <nav class="navbar h-100 ">
-      <div class="container-fluid">
-        <!-- logo -->
-        <a class="navbar-brand debug" href="#">
-          <img src="assets/img/logo.svg" alt="">
-        </a>
-        <!-- inpu -->
-        <form class="d-flex" role="search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        </form>
-   
-      </div>
-    </nav>
+  <header class="d-flex align-items-center ">
+    
+    <div class="logo d-flex align-items-center  debug"> 
+      <img src="assets/img/logo.svg" class="d-none d-md-block " class="logo-dekstop" alt="">
+      <img src="assets/img/mobile-logo.png" class="d-md-none  " class="mobile-logo" alt="">
+    </div>
+
+    <div class="search">
+      <form action="" class="debug">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Prova a cercare">
+      </form>
+    </div>
+    <div class="icons d-flex align-items-center justify-content-around  debug">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-circle-question"></i>
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+      <i class="fa-solid fa-bell"></i>
+    </div>
+
+
+      <!-- <div class="icons d-flex debug">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-circle-question"></i>
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+        <i class="fa-solid fa-bell"></i>
+      </div>  -->
+    
   </header>
   <!-- navbar -->
 
   <main class="d-flex ">
-    <aside>
-
+    <aside class="d-flex flex-column justify-content-between ">
+      <div class="top w-100 d-flex flex-column align-items-center  debug">
+        <a href="">HOME</a>
+        <a href="">Stats</a>
+        <a href="">Signals</a>
+      </div>
+      <div class="down w-100 d-flex  justify-content-center debug">
+        <a href="">admin</a>
+      </div>
     </aside>
-    <div class="workspace">
 
+    <div class="workspace">
+      <div class="container debug">
+
+      </div>
+      
     </div>
   </main>
 

@@ -20,8 +20,12 @@
 }
 
 body{
-  height: 100vh;
+  height: 100%;
   font-family: 'Roboto', sans-serif;
+}
+
+img{
+  max-width: 100%;
 }
 
 /* utilities */
@@ -35,27 +39,50 @@ form{
   background-color: var(--nav-input);
   align-items: center; 
   padding: 8px 5px ;
+  border-radius: 7px;
  }
  
 /* utilities */
 
 
 header{
-  height: 10vh;
-  min-height: 70px;
-  max-height: 70px;
+  background-color: #1265b8;
+  height: 70px;
 }
 
-header form{
-  background-color: white;
-
+.logo{
+  max-width: 150px;
+  min-width: 70px;
+  width: 15%;
+  height: 100%;
+  padding: 5px;
 }
 
+.logo img:nth-child(2){
+  width: 50px;
+  min-width: 50px;
+}
+
+.search{
+  width: 70%;
+}
+
+.search input{
+  width: calc(100% - 30px);
+}
+
+.icons{
+  width: 15%;
+  height: 100%;
+}
 
 
 main{
-  height: 90vh;
+  height: calc(100vh - 70px);
+  /* margin-top: 70px; */
 }
+
+
 
 aside{
   width: 150px;
@@ -67,9 +94,17 @@ aside{
   background-color: orange;
   height: 100%;
   width: calc(100% - 150px);
+  overflow:auto;
 }
 
 @media (max-width:768px){
+
+  .fa-bars,
+  .fa-circle-question,
+  .fa-ellipsis-vertical{
+    display: none;
+  }
+
   .workspace{
     width: calc(100% - 70px);
   }
