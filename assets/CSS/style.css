@@ -1,0 +1,80 @@
+:root{
+  --aside:#051e34;
+  --blu-bar:#1b72e8;
+  --code-icon:#f26551;
+  --links:#0d6efd;
+  --bell:#ff8f00;
+  --done:#198754;
+  --process:#ffc107;
+  --failed:#dc3545;
+  --nav-i:#5b5858;
+  --blue-bar-badges:#165bba;
+  --nav-input:#e5e5e5;
+  --i:#6c757d;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* utilities */
+.debug{
+  background-color: rgba(0, 139, 139, 0.426);
+  border: 1px solid firebrick;
+}
+
+
+form{
+  background-color: var(--nav-input);
+  align-items: center; 
+  padding: 8px 5px ;
+ }
+ 
+/* utilities */
+
+
+header{
+  height: 10vh;
+  min-height: 70px;
+  max-height: 70px;
+}
+
+header form{
+  background-color: white;
+
+}
+
+
+
+main{
+  height: 90vh;
+}
+
+aside{
+  width: 150px;
+  height: 100%;
+  background-color: hotpink;
+}
+
+.workspace{
+  background-color: orange;
+  height: 100%;
+  width: calc(100% - 150px);
+}
+
+@media (max-width:768px){
+  .workspace{
+    width: calc(100% - 70px);
+  }
+  
+  aside{
+    width:70px ;
+  }
+}
