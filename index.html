@@ -44,32 +44,126 @@
       <i class="fa-solid fa-ellipsis-vertical"></i>
       <i class="fa-solid fa-bell"></i>
     </div>
-
-
-      <!-- <div class="icons d-flex debug">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-circle-question"></i>
-        <i class="fa-solid fa-ellipsis-vertical"></i>
-        <i class="fa-solid fa-bell"></i>
-      </div>  -->
-    
   </header>
   <!-- navbar -->
 
   <main class="d-flex ">
     <aside class="d-flex flex-column justify-content-between ">
-      <div class="top w-100 d-flex flex-column align-items-center  debug">
-        <a href="">HOME</a>
-        <a href="">Stats</a>
-        <a href="">Signals</a>
+      <div class="top w-100 d-flex flex-column debug">
+        <a href="" class="d-flex">
+          <i class="fa-solid fa-house"></i><p class="d-none d-md-block">HOME</p>
+        </a>
+        <a href="" class="d-flex">
+          <i class="fa-solid fa-chart-simple"></i><p class="d-none d-md-block">Stats</p>
+        </a>
+        <a href="" class="d-flex">
+          <i class="fa-solid fa-signal"></i><p class="d-none d-md-block">Signals</p>
+        </a>
       </div>
       <div class="down w-100 d-flex  justify-content-center debug">
-        <a href="">admin</a>
+        <a href="" class="d-flex">
+          <i class="fa-solid fa-gear"></i><p class="d-none d-md-block">admin</p>
+        </a>
       </div>
     </aside>
 
     <div class="workspace">
-      <div class="container debug">
+      <div class="container-fluid debug">
+        <div class="row d-flex flex-row-reverse  debug">
+          <div class="col-12 col-sm-4 col-md-3 debug">
+            <h3>Nuovo Studente</h3>
+          </div>
+          <div class="col-12 col-sm-4 col-md-6 order-sm-1  debug">
+            <h1>boolean</h1>
+          </div>
+          <div class="col-12 col-sm-4 col-md-3  debug">
+            <h3>studenti online</h3>
+          </div>
+        </div>
+
+        <div class="row d-flex flex-column flex-md-row  ">
+          <div class="col-sx col-12 col-md-8 debug">
+            <div class="next-classes mb-3 mt-3">
+              <h2>Prossime Classi</h2>
+
+
+              <div class="d-flex w-100 justify-content-between  debug ">
+                <div class="name debug">Nome</div>
+                <div class="dx d-flex">
+                  <div class="date debug">Data inizio</div>
+                  <div class="roi debug"> ROI</div>
+                  <div class="state debug">Stato</div>
+                  <div class="action debug">azioni</div>
+                </div>
+              </div>
+
+
+              <div class="d-flex w-100 justify-content-between  debug ">
+                <div class="name d-flex debug">
+                  <div class="name-icon">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <p>Classe 75</p>
+                </div>
+                <div class="dx d-flex">
+                  <div class="date debug">15 Feb 2021</div>
+                  <div class="roi debug"> 20%</div>
+                  <div class="state debug">
+                    <span class="badge text-bg-success">Done</span>
+
+                  </div>
+                  <div class="action debug">azioni</div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="my-accordion">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Come aggiungere un nuovo studente?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Come posso accedere alle informazioni del mio account
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                     Posso usare questa dashboard da mobile?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-dx col-12 col-md-4 debug">
+            <div class="todo">
+
+            </div>
+          </div>
+        </div>
 
       </div>
       

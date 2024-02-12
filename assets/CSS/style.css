@@ -76,19 +76,70 @@ header{
   height: 100%;
 }
 
+aside{
+  width: 150px;
+  height: 100%;
+  background-color: hotpink;
+  padding: 30px 20px ;
+}
+
+aside i{
+  margin-right: 10px;
+}
 
 main{
   height: calc(100vh - 70px);
   /* margin-top: 70px; */
 }
 
-
-
-aside{
-  width: 150px;
-  height: 100%;
-  background-color: hotpink;
+main .next-classes{
+  width: 100%;
+  background-color: white;
 }
+
+
+.next-classes .name{
+  width: 25%;
+  padding-left: 10px;
+}
+
+.next-classes .dx{
+  width: 50%;
+  justify-content: space-between;
+}
+
+.next-classes .dx div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-classes .date{
+  width: 35%;
+}
+.next-classes .roi{
+  width: 10%;
+}
+.next-classes .state{
+  width: 20%;
+}
+.next-classes .action{
+  width: 30%;
+}
+
+
+
+.name-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--code-icon);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+
 
 .workspace{
   background-color: orange;
@@ -97,12 +148,23 @@ aside{
   overflow:auto;
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
 
   .fa-bars,
   .fa-circle-question,
   .fa-ellipsis-vertical{
     display: none;
+  }
+
+  .icons{
+    width: 50px;
+  }
+  aside i{
+    margin-top: 10px;
+  }
+
+  .search{
+    width: calc(100% - 120px);
   }
 
   .workspace{
