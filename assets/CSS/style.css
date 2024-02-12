@@ -121,12 +121,19 @@ main .next-classes{
   width: 10%;
 }
 .next-classes .state{
-  width: 20%;
+  width: 15%;
 }
 .next-classes .action{
   width: 30%;
+ 
 }
 
+.action div{
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+}
 
 
 .name-icon{
@@ -175,3 +182,4 @@ main .next-classes{
     width:70px ;
   }
 }
+
