@@ -129,17 +129,13 @@ main{
   background-color: var(--code-icon);
 }
 
+.todo{
+  background-color: white;
+  border-radius: 10px;
+}
 
-.name-icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--code-icon);
-  height: 30px;
-  width:30px;
-  min-height: 30px;
-  min-width:30px;
-  border-radius: 50%;
+.todo h2{
+  border-bottom: 1px solid var(--bordi);
 }
 
 
