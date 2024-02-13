@@ -59,8 +59,6 @@ header .nav{
 
 .logo{
   max-width: 150px;
-  min-width: 70px;
-  width: 15%;
   height: 100%;
   padding: 5px;
 }
@@ -100,11 +98,20 @@ main{
 }
 
 .workspace{
-  background-color: orange;
+  background-color: var(--nav-input);
   height: 100%;
   width: calc(100% - 150px);
   overflow:auto;
 }
+
+.blue-bar{
+  background-color: var(--blu-bar);
+}
+
+.bool .badge{
+  background-color: var(--blue-bar-badges);
+}
+
 
 .table .right{
   width: 50%;
@@ -127,6 +134,16 @@ main{
   width: 30px;
   border-radius: 50%;
   background-color: var(--code-icon);
+}
+
+.my-table{
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+.my-accordion{
+  background-color: #f7f7f7;
+  border-radius: 10px;
 }
 
 .todo{
