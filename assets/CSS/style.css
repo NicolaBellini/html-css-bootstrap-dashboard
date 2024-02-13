@@ -165,23 +165,29 @@ main{
 .my-table{
   background-color: #f7f7f7;
   border-radius: 10px;
+  border: 1px solid var(--bordi);
 }
 
 .my-accordion{
   background-color: #f7f7f7;
   border-radius: 10px;
+  border: 1px solid var(--bordi);
 }
 
 .todo{
   background-color: white;
   border-radius: 10px;
+  border: 1px solid var(--bordi);
 }
 
 .todo h2{
   border-bottom: 1px solid var(--bordi);
 }
 
-
+.graph{
+  border: 1px solid var(--bordi);
+  border-radius: 10px;
+}
 
 
 @media (max-width:767px){
