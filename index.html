@@ -26,19 +26,20 @@
 
   <!-- navbar -->
   <header class="d-flex align-items-center " >
-    <div class="nav d-flex align-items-center justify-content-between w-100 debug" >
-      <div class="logo d-flex align-items-center  debug"> 
+    <div class="nav d-flex align-items-center justify-content-between w-100" >
+      <div class="logo d-flex align-items-center "> 
         <img src="assets/img/logo.svg" class="d-none d-md-block " class="logo-dekstop" alt="">
         <img src="assets/img/mobile-logo.png" class="d-md-none  " class="mobile-logo" alt="">
       </div>
 
       <div class="search">
-        <form action="" class="debug">
+        <form action="">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Prova a cercare">
         </form>
       </div>
-      <div class="icons d-flex align-items-center justify-content-around  debug">
+
+      <div class="icons d-flex align-items-center justify-content-around ">
         <i class="fa-solid fa-bars"></i>
         <i class="fa-solid fa-circle-question"></i>
         <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -49,8 +50,8 @@
   <!-- navbar -->
 
   <main class="d-flex ">
-    <aside class="d-flex flex-column justify-content-between ">
-      <div class="top w-100 d-flex flex-column debug">
+    <aside class="d-flex flex-column justify-content-between">
+      <div class="top w-100 d-flex flex-column ">
         <a href="" class="d-flex">
           <i class="fa-solid fa-house"></i><p class="d-none d-md-block">HOME</p>
         </a>
@@ -61,7 +62,7 @@
           <i class="fa-solid fa-signal"></i><p class="d-none d-md-block">Signals</p>
         </a>
       </div>
-      <div class="down w-100 d-flex  justify-content-center debug">
+      <div class="down w-100 d-flex  justify-content-center ">
         <a href="" class="d-flex">
           <i class="fa-solid fa-gear"></i><p class="d-none d-md-block">admin</p>
         </a>
@@ -70,10 +71,114 @@
 
     <div class="workspace">
       <div class="container-fluid">
-        <div class="row d-flex flex-row-reverse blue-bar debug">
+        <div class="row d-flex flex-row-reverse blue-bar">
           <div class="col-12 col-sm-4 col-md-3 text-white p-3  d-flex align-items-center ">
             <span class="m-2 ">Nuovo Studente</span>
-            <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+            <div class=" my-canvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+             
+                <form class="row g-3">
+                  <div class="row g-2 ">
+                    <div class="col-6">
+                      <label for="inputEmail4" class="form-label">Nome</label>
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    </div>
+                    <div class="col-6">
+                      <label for="inputEmail4" class="form-label">Cognome</label>
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                  </div>
+                  <div class="row g-2 ">
+                    <div class="col-6">
+                      <label for="inputEmail4" class="form-label">email</label>
+                      <div class="input-group">
+                        <div class="input-group-text">@</div>
+                        <input type="text" class="form-control" id="baba" placeholder="email">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <label for="inputEmail4" class="form-label">Cognome</label>
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                  </div>
+                  <!-- <div class="col-12">
+                    <label class="visually-hidden" for="baba"></label>
+                    <div class="input-group">
+                      <div class="input-group-text">@</div>
+                      <input type="text" class="form-control" id="baba" placeholder="email">
+                    </div>
+                  </div> -->
+                
+                  <div class="row g-2 ">
+                    <div class="col">
+                      <label for="inputEmail4" class="form-label">Nome</label>
+                      <div class="input-group">
+                        <div class="input-group-text">@</div>
+                        <input type="text" class="form-control" id="baba" placeholder="email">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <label for="inputEmail4" class="form-label">Cognome</label>
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+                 
+                  <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Indirizzo 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Città</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">Stato</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">CAP</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Foto</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                  
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Seleziona per proseguire
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Salva</button>
+                    <button type="reset" class="btn btn-warning">Svuota</button>
+
+                  </div>
+
+                </form>
+              </div>
+            </div>
 
           </div>
           <div class="bool col-12 col-sm-4 col-md-6 order-sm-1 p-3 ">

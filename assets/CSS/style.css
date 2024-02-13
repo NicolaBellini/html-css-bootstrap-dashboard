@@ -43,12 +43,16 @@ form{
   padding: 8px 5px ;
   border-radius: 7px;
  }
+
+ .my-canvas form{
+  background-color: white;
+ }
  
 /* utilities */
 
 
 header{
-  background-color: #1265b8;
+  background-color: white;
   height: 70px;
 }
 
@@ -70,10 +74,14 @@ header .nav{
 
 .search{
   width: 70%;
+  background-color: var(--nav-input);
+  border-radius: 5px;
 }
 
 .search input{
   width: calc(100% - 30px);
+  background-color: var(--nav-input);
+  border: none;
 }
 
 .icons{
@@ -81,11 +89,21 @@ header .nav{
   height: 100%;
 }
 
+.icons .fa-bell{
+  color: var(--bell);
+}
+
 aside{
   width: 150px;
   height: 100%;
-  background-color: hotpink;
+  background-image: url(../img/sidebar-bg.png);
   padding: 30px 20px ;
+  background-color: var(--aside);
+}
+
+aside a{
+  color: white;
+  text-decoration: none;
 }
 
 aside i{
@@ -102,6 +120,14 @@ main{
   height: 100%;
   width: calc(100% - 150px);
   overflow:auto;
+}
+
+.my-canvas{
+  width: 100%;
+}
+
+.offcancas-body{
+  background-color: white;
 }
 
 .blue-bar{
@@ -170,7 +196,7 @@ main{
     width: 50px;
   }
   aside i{
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .search{
@@ -183,6 +209,10 @@ main{
   
   aside{
     width:70px ;
+  }
+
+  .my-canvas{
+    width: 100% !important;
   }
 }
 
