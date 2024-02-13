@@ -106,47 +106,27 @@ main{
   overflow:auto;
 }
 
-main .next-classes{
-  width: 100%;
-  background-color: white;
-}
-
-
-.next-classes .name{
-  width: 25%;
-  padding-left: 10px;
-}
-
-.next-classes .dx{
+.table .right{
   width: 50%;
-  justify-content: space-between;
 }
 
-.next-classes .dx div{
+
+.table td{
+  height: 50px;
+}
+
+.table td p{
+  margin: 0 !important;
+}
+
+.table .fa-code{
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.next-classes .date{
-  width: 35%;
-}
-.next-classes .roi{
-  width: 10%;
-}
-.next-classes .state{
-  width: 15%;
-}
-.next-classes .action{
-  width: 30%;
- 
-}
-
-.action div{
-  margin: 2px;
-  width: 30px;
+  justify-content: center;
   height: 30px;
-  border: 1px solid var(--bordi);
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--code-icon);
 }
 
 
@@ -162,32 +142,7 @@ main .next-classes{
   border-radius: 50%;
 }
 
-.my-accordion .title{
-  background-color: #f7f7f7;
-}
 
-
-.todo{
-  border-radius: 10px;
-  background-color: #f7f7f7;
-  overflow: hidden;
-}
-
-.todo .title{
-  background-color: #f7f7f7;
-  padding: 10px;
-  border-bottom: 1px solid var(--bordi);
-}
-
-.todo .my-check{
-  border: 1px solid var(--bordi);
-  border-bottom: none;
-  border-radius: 5px;
-}
-
-.todo .my-check div{
-  border-bottom: 1px solid var(--bordi);
-}
 
 
 @media (max-width:767px){
